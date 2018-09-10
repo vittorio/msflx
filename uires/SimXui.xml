@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SimBase.Document Type="AceXML" version="1,0" id="SimXui">
+<Filename>SimXui.xml</Filename>
+<SimXui.Locale></SimXui.Locale>
+
+<!-- FontMap properties:
+FontFace:    This is the font name as it appears in the Xui resources. Do not localize this.
+FontLocale:  This is a pattern that the current locale is matched against.  There may be more
+             Than one of these per FontMap, and if any pattern matches then the mapping will   
+             be added.  The locale is the Culture Name, such as are listed at 
+             http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfSystemGlobalizationCultureInfoClassTopic.asp.  
+             For examples, the pattern could be *04 to match any Chinese or 0C04 to match Hong Kong Chinese.
+FontFile:    This is the True Type font that will be used when the Xui resource refers to the
+             given FontFace.  If a subsequent FontMap (that matches the locale) redefines the 
+             mapping, it will be used instead.
+DefaultFont: An applicable font mapping with DefaultFont set to True will be the default font.
+             If none are set then the first font added will be the default, regardless of its 
+             DefaultFont value. -->
+
+<!-- Verdana -->
+
+<SimXui.FontMap>
+<FontFace>Verdana</FontFace>
+<FontFile>verdana.ttf</FontFile>
+<DefaultFont>True</DefaultFont>
+</SimXui.FontMap>
+
+
+<!-- Trebuchet MS (used with in-game chat) -->
+
+<SimXui.FontMap>
+<FontFace>Trebuchet MS</FontFace>
+<FontFile>verdana.ttf</FontFile>
+</SimXui.FontMap>
+
+<SimXui.FontMap>
+<FontFace>Trebuchet MS</FontFace>
+<FontFile>Malgun.ttf</FontFile>
+<FontLocale>0412</FontLocale>
+</SimXui.FontMap>
+
+<SimXui.FontMap>
+<FontFace>Trebuchet MS</FontFace>
+<FontFile>msjh.ttf</FontFile>
+<FontLocale>0404</FontLocale>
+</SimXui.FontMap>
+
+</SimBase.Document>
+

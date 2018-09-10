@@ -1,0 +1,18 @@
+body
+{
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: arial,helvetica;
+    background-color: #A5A5A5;
+}
+.goalFailed
+{
+    color: #ff8080;
+}
+.goalPending
+{
+    color: #80ff80;
+}
+.goalCompleted
+{
+    color: #000000;
+}

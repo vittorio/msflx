@@ -1,0 +1,37 @@
+body 
+{
+    font-family: arial,helvetica;
+    font-size: 9pt;
+    background-color: #FFFFFF;
+}
+
+.keytable
+{
+    font-family: arial,helvetica;
+    font-size: 9pt;
+    border: solid #C0C0C0 1px;
+    border-collapse: collapse;
+}
+
+TD 
+{
+    margin-top: 0;
+    margin-bottom: 0;
+    border: solid #C0C0C0 1px;
+}
+
+.keys
+{
+    font-weight: bold;
+}
+
+.grouplabel
+{
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.hilit
+{
+    background-color: yellow;
+}

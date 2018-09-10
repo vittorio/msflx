@@ -1,0 +1,14 @@
+body
+{
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: arial,helvetica;
+    background-color: #F7FFF7;
+}
+.evenrow
+{
+    background-color: #DEE7F7;
+}
+.oddrow
+{
+    background-color: #F7FFF7;
+}
