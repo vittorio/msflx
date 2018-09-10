@@ -1,0 +1,454 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Windows (vers 12 April 2005), see www.w3.org">
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=iso-8859-1">
+
+  <title>Controller Troubleshooting Basics</title>
+  <link href="../../common/style.css" rel="stylesheet" type=
+  "text/css">
+</head>
+
+<body class="stdcolor" >
+  <a name="top"></a>
+
+  <table width="100%" cellpadding="0" cellspacing="10" summary="SummaryTBD">
+    <tr>
+      <td>
+        <table width="100%" border="0" cellspacing="0" cellpadding=
+        "0" summary="SummaryTBD">
+          <tr>
+            <td class="GSTable"><span class="GSH1">Controller
+            Troubleshooting Basics</span></td>
+          </tr>
+
+          <tr>
+            <td bgcolor="#000000"><img src=
+            "../../Common/images/1ptrans.gif" width="1" height="1"
+            alt="" border="0"></td>
+          </tr>
+        </table>
+
+        <div class="articleDeck">
+          Resolving unresponsive or erratic joysticks, yokes, and
+          rudders
+        </div>
+
+        <div class="article-bodycopy">
+          <table border="0" cellspacing="10" cellpadding="0" align=
+          "right" summary="SummaryTBD">
+            <tr>
+              <td>
+                <span class="TOCsubhead">Contents</span><br>
+
+                <table border="0" cellspacing="5" cellpadding="0"
+                class="RelatedLinkTableThin" summary="SummaryTBD">
+                  
+                  <tr class="article-bodycopy">
+                    <td valign="top"><img src=
+                    "../../Common/images/RelatedBullet.gif" width=
+                    "6" height="12" alt="" border="0"></td>
+
+                    <td><a href=
+                    "#ControllerConnection">
+                    Controller Connection</a></td>
+                  </tr>
+
+                  <tr class="article-bodycopy">
+                    <td valign="top"><img src=
+                    "../../Common/images/RelatedBullet.gif" width=
+                    "6" height="12" alt="" border="0"></td>
+
+                    <td><a href=
+                    "#Calibrating">Calibrating the Controller</a></td>
+                  </tr>
+
+                  <tr class="article-bodycopy">
+                    <td valign="top"><img src=
+                    "../../Common/images/RelatedBullet.gif" width=
+                    "6" height="12" alt="" border="0"></td>
+
+                    <td><a href=
+                    "#ResettingDefaults">Resetting Defaults</a></td>
+                  </tr>
+
+                  <tr class="article-bodycopy">
+                    <td valign="top"><img src=
+                    "../../Common/images/RelatedBullet.gif" width=
+                    "6" height="12" alt="" border="0"></td>
+
+                    <td><a href=
+                    "#TheConfigurationFile">Rebuilding
+                    the Configuration File</a></td>
+                  </tr>
+
+                  <tr class="article-bodycopy">
+                    <td valign="top"><img src=
+                    "../../Common/images/RelatedBullet.gif" width=
+                    "6" height="12" alt="" border="0"></td>
+
+                    <td><a href=
+                    "#DeviceDrivers">Device Drivers</a></td>
+                  </tr>
+
+                  <tr class="article-bodycopy">
+                    <td valign="top"><img src=
+                    "../../Common/images/RelatedBullet.gif" width=
+                    "6" height="12" alt="" border="0"></td>
+
+                    <td><a href=
+                    "#DirectX">Installing DirectX</a></td>
+                  </tr>
+
+                  <tr>
+                    <td colspan="2" align="center"><img src=
+                    "../../Common/images/1ptrans.gif" width="1"
+                    height="1" alt="" border="0"></td>
+                  </tr>
+                </table>
+
+                <span class="TOCsubhead">Related Links</span>
+
+                <table border="0" cellspacing="5" cellpadding="0"
+                class="RelatedLinkTableThin" summary="SummaryTBD">
+                  <tr class="article-bodycopy">
+                    <td valign="top"><img src=
+                    "../../Common/images/RelatedBullet.gif" width=
+                    "6" height="12" alt="" border="0"></td>
+
+                    <td><a href="TroubleShooting2.htm">Advanced
+                    Controller Troubleshooting</a></td>
+                  </tr>
+
+                  <tr class="article-bodycopy">
+                    <td valign="top"><img src=
+                    "../../Common/images/RelatedBullet.gif" width=
+                    "6" height="12" alt="" border="0"></td>
+
+                    <td><a href=
+                    "TroubleShootingBasics.htm">Troubleshooting
+                    Basics</a></td>
+                  </tr>
+
+                  <tr class="article-bodycopy">
+                    <td valign="top"><img src=
+                    "../../Common/images/RelatedBullet.gif" width=
+                    "6" height="12" alt="" border="0"></td>
+
+                    <td><a href=
+                    "../ImportantSkills/UsingJoysticksYokesThrottlesPedals.htm">
+                    Using a Joystick</a></td>
+                  </tr>
+
+                  <tr class="article-bodycopy">
+                    <td valign="top"><img src=
+                    "../../Common/images/RelatedBullet.gif" width=
+                    "6" height="12" alt="" border="0"></td>
+
+                    <td><a href="Support.htm">Contacting Technical
+                    Support</a></td>
+                  </tr>
+
+                  <tr>
+                    <td colspan="2" align="center"><img src=
+                    "../../Common/images/1ptrans.gif" width="1"
+                    height="1" alt="" border="0"></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+
+          <p>If one or more of the following symptoms occur when
+          you run Flight Simulator, use the troubleshooting methods
+          in the order in which they are presented in this
+          article:</p>
+
+          <ul>
+            <li>The joystick behaves erratically.</li>
+
+            <li>The joystick does not respond.</li>
+
+            <li>The rudder or throttle does not respond.</li>
+          </ul>
+
+          <p>After each method, test to see if the issue is
+          resolved. If the issue continues to occur, proceed to the
+          next method.</p>
+
+          <p class="SubHead">Verify Latest Drivers</p>
+
+          <p>For best performance, verify that the
+          latest version of the driver for your game controller is
+          installed on your computer. Visit the Web site of your
+		  controller's manufacturer. You can usually download updated
+		  drivers for free if they are available. 
+		  See <a href="#DeviceDrivers">Device Drivers</a> below.</p>
+
+         <a name="ControllerConnection"></a>
+
+          <p class="SubHead">Verify Controller Connection</p>
+
+          <p>Verify that the game controller is connected directly to
+          the correct USB or game port in your computer. &quot;Daisy chained&quot; game
+          controllers (a controller connected to another
+          controller, which is in turn connected to the computer)
+          or game port adapters can interfere with communication
+          between the computer and the game controller.</p>
+
+          <p>If you use a USB game controller, verify that the game
+          controller is connected properly to the USB port in your
+          computer or to a compatible USB hub that is connected to
+          the USB port in your computer.</p><a name="Calibrating"></a>
+
+          <p class="SubHead">Calibrate the Controller</p>
+
+          <p>If your controller is not behaving as you expect, you might
+		  need to calibrate it.</p>
+
+          <table border="0" cellspacing="0" cellpadding="0" class=
+          "SideBarTable" summary="SummaryTBD">
+            <tr>
+              <td>
+                <p><strong>To test the calibration for your
+                game controller</strong></p>
+
+                <ol>
+                  <li>Click <strong>Start</strong>, point to <strong>Settings</strong>,
+                  and then click <strong>Control Panel</strong>.</li>
+
+                  <li>Double-click <strong>Game Controllers</strong>.</li>
+
+                  <li>Select the device that you want to test in
+                  the <strong>Controller</strong> column, and then click
+                  <strong>Properties</strong>.</li>
+
+                  <li>On the <strong>Test</strong> tab, test all of the
+                  functions for your game controller</li>
+
+                  <li>Click <strong>OK</strong>.</li>
+                </ol>
+              </td>
+            </tr>
+          </table>
+
+
+          <p>If you use an analog game controller, you may
+          need to calibrate the game controller manually.</p>
+
+          <table border="0" cellspacing="0" cellpadding="0" class=
+          "SideBarTable" summary="SummaryTBD">
+            <tr>
+              <td>
+                <p><strong>To calibrate the game controller manually</strong></p>
+
+                <ol>
+                  <li>Click <strong>Start</strong>, point to <strong>Settings</strong>,
+                  and then click <strong>Control Panel</strong>.</li>
+
+                  <li>Double-click <strong>Game Controllers</strong>.</li>
+
+                  <li>Select a device in the <strong>Controller</strong> 
+				  column, then click <strong>Properties</strong>.</li>
+
+                  <li>On the <strong>Settings</strong> tab, click 
+				  <strong>Calibrate</strong>, and then follow the
+                  instructions on the screen to calibrate the game
+                  controller.
+
+                    <p><strong>Note:</strong> Because of differences among
+                    analog game controllers, you may notice a
+                    certain amount of deviation between the graphic
+                    display for the joystick position and the
+                    actual joystick movement. This is normal and
+                    does not affect the calibration of the game
+                    controller.</p>
+                  </li>
+
+                  <li>When calibration is completed, click
+                  <strong>Finish</strong>.</li>
+
+                  <li>On the <strong>Test</strong> tab, test all of the
+                  functions for your game controller, then
+                  click <strong>OK</strong>.</li>
+                </ol>
+              </td>
+            </tr>
+          </table>
+
+          <p>If you cannot calibrate your game controller, or if
+          your game controller does not function properly when you
+          test it, Windows may be unable to communicate properly
+          with the game controller. Contact the manufacturer of
+          your game controller for information about how to
+          configure the device correctly in Windows. You may also
+          need to <a href="#DeviceDrivers">obtain and install the latest version of the game
+          controller device driver</a>.</p>
+
+          <p>If you calibrate and test the game controller
+          successfully, start Flight Simulator to test the game
+          controller. If the issue continues to occur, calibrate
+          the device from within Flight Simulator.</p>
+
+          <table border="0" cellspacing="0" cellpadding="0" class=
+          "SideBarTable" summary="SummaryTBD">
+            <tr>
+              <td>
+                <p><strong>To calibrate and test the game controller
+                in Flight Simulator</strong></p>
+
+                <ol>
+                  <li>On the main screen, click <strong>Settings</strong>.</li>
+
+                  <li>Click <strong>Controls</strong>.</li>
+
+                  <li>On the <strong>Calibration</strong> tab, 
+				  click <strong>Calibrate</strong>.</li>
+
+                  <li>Select a device in the <strong>Controller</strong> 
+				  column, then click <strong>Properties</strong>.</li>
+
+                  <li>On the <strong>Settings</strong> tab, click 
+				  <strong>Calibrate</strong>, and then follow the
+                  instructions on the screen to calibrate the game
+                  controller.</li>
+
+                  <li>When calibration is completed, click
+                  <strong>Finish</strong>.</li>
+
+                  <li>On the <strong>Test</strong> tab, test all of the
+                  functions for your game controller, then
+                  click <strong>OK</strong>.</li>
+                </ol>
+              </td>
+            </tr>
+          </table><a name="ResettingDefaults"></a><br>
+
+          <p class="SubHead">Resetting the Defaults</p><br><br>
+
+          <table border="0" cellspacing="0" cellpadding="0" class=
+          "SideBarTable" summary="SummaryTBD">
+            <tr>
+              <td>
+                <p><strong>To reset the default actions assigned to the
+                game controller</strong></p>
+
+                <ol>
+                  <li>On the main screen, click <strong>Settings</strong>,
+				  then click <strong>Controls</strong>.</li>
+
+                  <li>In the Controls dialog box, click <strong>Reset defaults</strong>.</li>
+
+                  <li>Click <strong>OK</strong>.</li>
+                </ol>
+              </td>
+            </tr>
+          </table><a name="TheConfigurationFile"></a>
+
+          <p class="SubHead">Rebuild the Configuration File</p>
+
+          <p>The Flight Simulator configuration file contains
+          settings for your joystick. Rebuilding this file may
+          resolve problems you are having with the joystick.</p>
+
+          <table border="0" cellspacing="0" cellpadding="0" class=
+          "SideBarTable" summary="SummaryTBD">
+            <tr>
+              <td>
+                <p><strong>To rebuild the Flight Simulator configuration
+                file</strong></p>
+
+                <ol>
+                  <li>Press and hold down <strong>CTRL+SHIFT</strong> as you
+                  start Flight Simulator and start a new
+                  flight.</li>
+
+                  <li>Continue to hold down <strong>CTRL+SHIFT</strong> until
+                  the simulator is in Cockpit view.</li>
+                </ol>
+
+                <p><strong>Note:</strong> When you rebuild the configuration file,
+                all settings in the simulator will return to
+                default values, including display, game
+                controllers, and all other options.</p>
+              </td>
+            </tr>
+          </table>
+
+          <p>If your game controller is installed properly and the
+          devices configuration file contains the default settings
+          for your game controller, Flight Simulator adds the
+          appropriate entries for your game controller to the
+          configuration file.</p>
+
+          <table border="0" cellspacing="0" cellpadding="0" class=
+          "note" summary="SummaryTBD">
+            <tr>
+              <td>
+                <p><strong>Note:</strong> To manually assign actions to the
+                buttons on your game control device, see <a href=
+                "../ImportantSkills/ImportantSkillsIndex.htm">Important
+				Skills</a>.</p>
+              </td>
+            </tr>
+          </table><a name="DeviceDrivers"></a>
+
+          <p class="SubHead">Device Drivers</p>
+
+          <p>Drivers are small software programs that allow your
+          operating system to communicate with the hardware
+          installed in or attached to your computer. A driver acts
+          as a translator between your hardware and operating
+          system, and can also enhance the operation of a
+          particular piece of hardware, such as a video adapter or
+          joystick. A damaged or outdated driver can cause many
+          types of errors to occur.</p>
+
+          <p>A new driver for your joystick might allow your
+          joystick to use features more efficiently or improve
+          performance. The manufacturer of your controller probably
+          offers free driver updates on their Web site. Contact
+          your manufacturer to inquire about
+          how to obtain and install the latest version of the
+          driver.</p>
+
+          <p>For information about how to contact your manufacturer, 
+		  visit <strong>support.microsoft.com</strong> and look
+          up the following articles in the Microsoft Knowledge
+          Base.</p>
+
+          <ul>
+            <li><strong>Article 65416: Hardware and Software Third-Party
+            Vendor Contact List, A-K</strong></li>
+
+            <li><strong>Article 60781: Hardware and Software Third-Party
+            Vendor Contact List, L-P</strong></li>
+
+            <li><strong>Article 60782: Hardware and Software Third-Party
+            Vendor Contact List, Q-Z</strong></li>
+          </ul>
+		  
+		   <p>(You will need an Internet connection to access 
+		   this information.)</p><a name="DirectX"></a>
+
+          <p class="SubHead">Installing DirectX</p>
+
+          <p>DirectX is a free software program that allows Flight
+          Simulator to communicate properly with the various
+          hardware devices in your computer. DirectX is updated
+          from time to time. Download and install the latest
+          version of DirectX from 
+		  <a href="http://www.microsoft.com/directx/" target="_blank"><strong>
+			www.microsoft.com/directx/</strong></a>.</p>
+        </div>
+
+        <div class="TopLink">
+          <a href="#top" class="TopLink">- top -</a>
+        </div>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

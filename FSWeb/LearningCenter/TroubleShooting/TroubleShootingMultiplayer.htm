@@ -1,0 +1,807 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Windows (vers 12 April 2005), see www.w3.org">
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=iso-8859-1">
+
+  <title>Troubleshooting Multiplayer</title>
+  <link href="../../common/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="stdcolor" >
+  
+    <a name="top"></a>
+
+    <table width="100%" cellpadding="0" cellspacing="10" summary="SummaryTBD">
+      <tr>
+        <td>
+          <table width="100%" border="0" cellspacing="0"
+          cellpadding="0" summary="SummaryTBD">
+            <tr>
+              <td class="GStable"><span class=
+              "GSH1">Troubleshooting Multiplayer</span></td>
+            </tr>
+
+            <tr>
+              <td bgcolor="#000000"><img src=
+              "../../Common/images/1ptrans.gif" width="1" height=
+              "1" alt="" border="0"></td>
+            </tr>
+          </table>
+
+          <div class="articleDeck">
+            Solving problems in multiplayer sessions
+          </div>
+
+          <div class="article-bodycopy">
+            <table border="0" cellspacing="10" cellpadding="0"
+            align="right" summary="SummaryTBD">
+              <tr>
+                <td>
+                  <span class="TOCsubhead">Contents</span><br>
+
+                  <table border="0" cellspacing="5" cellpadding="0"
+                  class="RelatedLinkTableThin" summary="SummaryTBD">
+                    
+					<tr class="article-bodycopy">
+                      <td valign="top"><img src=
+                      "../../Common/images/RelatedBullet.gif"
+                      width="6" height="12" alt="" border="0"></td>
+
+                      <td><a href=
+                      "#DirectX">DirectX</a></td>
+                    </tr>
+
+                    <tr class="article-bodycopy">
+                      <td valign="top"><img src=
+                      "../../Common/images/RelatedBullet.gif"
+                      width="6" height="12" alt="" border="0"></td>
+
+                      <td><a href="#CleanBoot">Perform a Clean Boot</a></td>
+                    </tr>
+
+                    <tr class="article-bodycopy">
+                      <td valign="top"><img src=
+                      "../../Common/images/RelatedBullet.gif"
+                      width="6" height="12" alt="" border="0"></td>
+
+                      <td><a href=
+                      "#VerifyDirectX">Verify DirectX Files</a></td>
+                    </tr>
+
+                    <tr class="article-bodycopy">
+                      <td valign="top"><img src=
+                      "../../Common/images/RelatedBullet.gif"
+                      width="6" height="12" alt="" border="0"></td>
+
+                      <td><a href=
+                      "#TestYourNetwork">Test Your Network</a></td>
+                    </tr>
+
+                    <tr class="article-bodycopy">
+                      <td valign="top"><img src=
+                      "../../Common/images/RelatedBullet.gif"
+                      width="6" height="12" alt="" border="0"></td>
+
+                      <td><a href=
+                      "#TestConnectionSpeed">Test Connection Speed</a></td>
+                    </tr>
+
+                    <tr class="article-bodycopy">
+                      <td valign="top"><img src=
+                      "../../Common/images/RelatedBullet.gif"
+                      width="6" height="12" alt="" border="0"></td>
+
+                      <td><a href=
+                      "#TroubleshootBroadband">Troubleshoot Broadband</a></td>
+                    </tr>
+
+                    <tr class="article-bodycopy">
+                      <td valign="top"><img src=
+                      "../../Common/images/RelatedBullet.gif"
+                      width="6" height="12" alt="" border="0"></td>
+
+                      <td><a href=
+                      "#VerifyDirectXPorts">Verify DirectX Ports</a></td>
+                    </tr>
+
+                    <tr class="article-bodycopy">
+                      <td valign="top"><img src=
+                      "../../Common/images/RelatedBullet.gif"
+                      width="6" height="12" alt="" border="0"></td>
+
+                      <td><a href=
+                      "#FirewallConflicts">Firewall Conflicts</a></td>
+                    </tr>
+
+                    <tr class="article-bodycopy">
+                      <td valign="top"><img src=
+                      "../../Common/images/RelatedBullet.gif"
+                      width="6" height="12" alt="" border="0"></td>
+
+                      <td><a href="#DisableICF">Disable ICF</a></td>
+                    </tr>
+
+                    <tr class="article-bodycopy">
+                      <td valign="top"><img src=
+                      "../../Common/images/RelatedBullet.gif"
+                      width="6" height="12" alt="" border="0"></td>
+
+                      <td><a href=
+                      "#WirelessNetworks">Wireless Networks</a></td>
+                    </tr>
+
+                    <tr class="article-bodycopy">
+                      <td valign="top"><img src=
+                      "../../Common/images/RelatedBullet.gif"
+                      width="6" height="12" alt="" border="0"></td>
+
+                      <td><a href=
+                      "#DialUpDrivers">Dial-Up Modem Drivers</a></td>
+                    </tr>
+
+                    <tr class="article-bodycopy">
+                      <td valign="top"><img src=
+                      "../../Common/images/RelatedBullet.gif"
+                      width="6" height="12" alt="" border="0"></td>
+
+                      <td><a href="#PlugAndPlayNetworks">
+                      Universal Plug and Play Networks</a></td>
+                    </tr>
+
+                    <tr class="article-bodycopy">
+                      <td valign="top"><img src=
+                      "../../Common/images/RelatedBullet.gif"
+                      width="6" height="12" alt="" border="0"></td>
+
+                      <td><a href="#References">References</a></td>
+                    </tr>
+
+                    <tr>
+                      <td colspan="2" align="center"><img src=
+                      "../../Common/images/1ptrans.gif" width="1"
+                      height="1" alt="" border="0"></td>
+                    </tr>
+                  </table>
+
+                 <span class="TOCsubhead">Related Links</span>
+
+                  <table border="0" cellspacing="5" cellpadding="0"
+                  class="RelatedLinkTableThin" summary="SummaryTBD">
+                    <tr class="article-bodycopy">
+                      <td valign="top"><img src=
+                      "../../Common/images/RelatedBullet.gif"
+                      width="6" height="12" alt="" border="0"></td>
+
+                      <td><a href=
+                      "../Multiplayer/MultiplayerIndex.htm">Multiplayer</a></td>
+                    </tr>
+
+                    <tr class="article-bodycopy">
+                      <td valign="top"><img src=
+                      "../../Common/images/RelatedBullet.gif"
+                      width="6" height="12" alt="" border="0"></td>
+
+                      <td><a href=
+                      "TroubleShootingBasics.htm">Troubleshooting
+                      Basics</a></td>
+                    </tr>
+
+                    <tr class="article-bodycopy">
+                      <td valign="top"><img src=
+                      "../../Common/images/RelatedBullet.gif"
+                      width="6" height="12" alt="" border="0"></td>
+
+                      <td><a href="Support.htm">Contacting
+                      Technical Support</a></td>
+                    </tr>
+
+                    <tr>
+                      <td colspan="2" align="center"><img src=
+                      "../../Common/images/1ptrans.gif" width="1"
+                      height="1" alt="" border="0"></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+
+
+			<p>Problems with starting multiplayer games are usually
+            related to the method by which you're trying to
+            connect.</p>
+
+            <p class="SubHead2">Local Area Network Connections</p>
+
+            <p>If you're having trouble connecting over a LAN, try
+            connecting using the host IP address rather than
+            searching for the host in the <strong>Sessions</strong> list.
+			To learn more about direct connections in LAN sessions, see
+			<a href="../Multiplayer/MultiplayerConnect.htm#JoinDirect"> Join Direct to Host</a>
+			 and <a href="../Multiplayer/MultiplayerSettings.htm">Network Settings</a>.</p>
+
+            <p class="SubHead2">Internet Connections</p>
+
+            <p>The most frequent cause of problems when starting
+			 an Internet multiplayer game is that a
+            player's computer is not connected to the Internet. If
+            you're having trouble connecting to <strong>Steam</strong> or via the
+            host's IP address, check your Internet connection.</p>
+			
+            <p>To resolve most multiplayer issues, perform the
+            steps in this article <em>in the sequence in which they
+            are presented</em>. If the steps in this article do not
+            resolve the issue, you may have problems with your
+            network setup.</p>
+
+            <p>Microsoft does not provide support for configuring
+            personal networks, Internet service providers (ISPs), 
+			firewalls, or routers. If you
+            suspect that your personal network, ISP, firewall, or
+            router is the cause of your issue, you should contact
+            the manufacturer of your hardware or software, or the
+            provider of your Internet services, for assistance in
+            those areas.</p>
+
+            <p>For information about how to contact the
+            manufacturer of your particular hardware or software,
+            see the <a href="#References">References</a> section of
+            this article.</p><a name="DirectX"></a><br>
+
+            <p class="SubHead">Install the Latest Version of
+            DirectX</p>
+
+            <p>All multiplayer session participants should use the
+            same version of DirectX. To download and install the
+            latest version of DirectX, visit
+            <strong>www.microsoft.com/directx</strong>.</p>
+
+            <p>If you already have the latest version of DirectX
+            installed, try reinstalling DirectX after performing a
+            &quot;clean boot&quot; on your computer.</p><a name=
+            "CleanBoot"></a>
+
+            <p class="SubHead">Perform a Clean Boot</p><br>
+
+            <p>When you start Microsoft Windows, other software may
+            start along with the operating system. These programs,
+            which may include antivirus and system utility
+            programs, can interfere with Flight Simulator.
+            Consequently, you may receive an error message or
+            be returned to the desktop during multiplayer sessions;
+            Flight Simulator may also stop responding. When you
+            perform a clean boot, you prevent other programs from
+            interrupting Flight Simulator.</p>
+
+          <table border="0" cellspacing="0" cellpadding="0"
+            class="SideBarTable" summary="SummaryTBD">
+              <tr>
+                <td>
+                  <P>To perform a clean boot on a computer running Windows XP</P>
+				<OL>
+					<LI>Click <strong>Start</strong>, and then 
+					click <strong>Run</strong>.</li>
+					
+					<LI>In the <strong>Open</strong> box, type <strong>msconfig</strong>, 
+					and then click <strong>OK</strong>.</li>
+					
+					<LI>In the <strong>System Configuration Utility</strong>, click 
+					the <strong>General</strong> tab, and then click 
+					<strong>Selective Startup</strong>.</li>
+					
+					<LI>Under <strong>Selective Startup</strong>, clear the following 
+					check boxes:</li>
+					
+				<UL>
+					<LI><strong>Process SYSTEM.INI file</strong></li>
+					<LI><strong>Process WIN.INI file</strong></li>
+					<LI><strong>Load Startup Items</strong></li>
+				</ul>
+				
+					<LI>Click the <strong>Services</strong> tab.</li>
+					
+					<LI>Select the <strong>Hide All Microsoft Services</strong> 
+					check box, and then click <strong>Disable All</strong>.</li>
+					
+					<li>Click <strong>OK</strong></li>
+					
+					<li>Click <strong>Restart</strong>.</li>
+				</OL>
+
+			<P><strong>Note:</strong> To complete this procedure, you must be logged on 
+			as an administrator or as a member of the Administrators group. If 
+			your computer is connected to a network, network policy settings 
+			may prevent you from completing this procedure.</P>
+                </td>
+              </tr>
+            </table><br> 
+
+
+			<table border="0" cellspacing="0" cellpadding="0"
+            class="SideBarTable" summary="SummaryTBD">
+              <tr>
+                <td>
+                  <P>To restore a normal startup</P>
+					<OL>
+						<LI>Click <strong>Start</strong>, and then 
+						click <strong>Run</strong>.</li>
+						
+						<LI>In the <strong>Open</strong> box, type 
+						<strong>msconfig</strong>, and then click 
+						<strong>OK</strong>.</li>
+						
+						<LI>In the <strong>System Configuration Utility</strong>, 
+						click the <strong>General</strong> tab.</li>
+						
+						<LI>Click <strong>Normal Startup</strong>.</li>
+						
+						<LI>Click <strong>OK</strong>.</li>
+						
+						<LI>Click <strong>Restart</strong>.</li>
+					</OL>
+                </td>
+              </tr>
+            </table>
+			
+
+            <p>For additional information about how to perform a clean boot,
+            visit <strong>support.microsoft.com</strong> and search for
+            <strong>Article 331796: How to Perform a Clean Boot to
+            Prevent Background Programs from Interfering with
+            Play</strong> in the Microsoft Knowledge Base. (You will
+            need an Internet connection to access this
+            information.)</p><a name="VerifyDirectX"></a><br>
+
+            <p class="SubHead">Verify DirectX Files</p><br>
+
+           <table border="0" cellspacing="0" cellpadding="0"
+            class="SideBarTable" summary="SummaryTBD">
+              <tr>
+                <td>
+                  <p><strong>To test for correct DirectX installation</strong></p>
+
+                  <ol>
+                    <li>Click <strong>Start</strong>, and then click
+                    <strong>Run</strong>.</li>
+
+                    <li>In the <strong>Open</strong> box, type
+                    <strong>dxdiag</strong> and then click <strong>OK</strong>.</li>
+
+                    <li>In the <strong>DirectX Diagnostic Tool</strong>,
+                    click the <strong>DirectX Files</strong> tab and check
+                    that no problems are reported under
+                    <strong>Notes</strong>.</li>
+
+                    <li>Click the <strong>Network</strong> tab and check that
+                    no problems are reported under
+                    <strong>Notes</strong>.</li>
+					
+					<li>If problems are listed, reinstall DirectX.</li>
+                  </ol>
+                </td>
+              </tr>
+            </table><a name="TestYourNetwork"></a><br>
+
+            <p class="SubHead">Test Your Network</p><br>
+
+            <table border="0" cellspacing="0" cellpadding="0"
+            class="SideBarTable" summary="SummaryTBD">
+              <tr>
+                <td>
+                  <p><strong>To test your network</strong></p>
+
+                  <ol>
+                    <li>Click <strong>Start</strong>, and then click
+                    <strong>Run</strong>.</li>
+
+                    <li>In the <strong>Open</strong> box, type
+                    <strong>dxdiag</strong>and then click <strong>OK</strong>.</li>
+
+                    <li>In the <strong>DirectX Diagnostic Tool</strong>, 
+					click the <strong>Network</strong> tab,
+					and then click <strong>Test DirectPlay</strong>.</li>
+
+                    <li>In the <strong>DirectPlay Test</strong> dialog box,
+                    type your name in the <strong>User Name</strong>
+                    box.</li>
+
+                    <li>Click <strong>DirectPlay8 TCP/IP Service
+                    Provider</strong>.</li>
+
+                    <li>Type the port, if necessary, in the
+                    <strong>TCP/IP port</strong> box.</li>
+
+                    <li>Select <strong>Create New Session</strong>.</li>
+
+                    <li>Click <strong>OK</strong>.<br>
+                    You should see the <strong>Dxdiag DirectPlay
+                    Chat</strong>.</li>
+
+                    <li>Ask the other player(s) to join your
+                    session; they'll choose <strong>Join Existing
+                    Session</strong>.<br>
+					<strong>Note:</strong> If you're running the DirectPlay 
+					test over the Internet, you must send the joining 
+					players your current IP address.</li>
+					
+					<li>Ask another player to host a session and join the
+					session yourself.</li>
+                  </ol>
+                </td>
+              </tr>
+            </table>
+
+            <p>If DirectPlay test works correctly, you should be
+            able to make the connection from within Flight
+            Simulator without any problems. If the test does not work correctly,
+			contact your network administrator.</p><a name="TestConnectionSpeed"></a>
+
+            <p class="SubHead">Test Your Connection Speed</p>
+
+            <p>To test your connection speed, visit
+            <strong>http://msn-cnet.com.com/Bandwidth_meter/7004-7254_7-0.html?tag=tool2</strong>. 
+			(You will need an Internet connection to access this service.)</p>
+
+            <p>If your reported connection speed appears to be less
+            than you expect, you should contact your Internet
+            service provider for assistance.</p><a name=
+            "TroubleshootBroadband"></a>
+
+            <p class="SubHead">Troubleshoot the Broadband Connection</p>
+
+            <p>There are three basics types of broadband
+            connections: direct, router, and Windows ICS. These
+            types of connections typically involve multiple devices, 
+			such as an external modem, router, switch, hub, or firewall.</p>
+
+            <p class="SubHead2">Repair the network connection</p>
+
+            <p>If your computer is running Windows XP, try
+            repairing your connection.</p>
+
+            <table border="0" cellspacing="0" cellpadding="0"
+            class="SideBarTable" summary="SummaryTBD">
+              <tr>
+                <td>
+                  <p><strong>To repair your connection</strong></p>
+
+                  <ol>
+                    <li>Click <strong>Start</strong>, and then click <strong>Control
+                    Panel</strong>.</li>
+
+                    <li>Double-click <strong>Network
+                    Connections</strong>.</li>
+
+                    <li>Double-click the name of your network.</li>
+
+                    <li>Click the <strong>Support</strong> tab.</li>
+
+                    <li>Click <strong>Repair</strong> and then follow the
+					on-screen instructions.</li>
+                  </ol>
+                </td>
+              </tr>
+            </table>
+
+            <p>This may improve your connection or may provide a
+			 message about a problem on your network.</p>
+
+            <p class="SubHead2">Open the required ports</p>
+
+            <p>In most of the above cases ports have to be opened
+            on routers, firewalls, and ICS. See the <a href=
+            "#VerifyDirectXPorts">Verify the
+            Required DirectX Ports</a> section in this article for
+            more information.</p>
+
+            <p class="SubHead2">Connect directly to the
+            Internet</p>
+
+            <p>The best way to determine if the issue is due to
+            your broadband hardware is to connect directly to
+            Internet without any device except the DSL adapter or
+            cable modem.</p>
+
+            <p>If the problem disappears when the system is
+            configured without intervening hardware, contact the
+            hardware manufacturer, your ISP, or your network
+            administrator to configure the other hardware
+            correctly.</p>
+
+            <p class="SubHead2">Set up a perimeter network</p>
+
+            <p>Contact your router manufacturer to learn how to
+            correctly configure a perimeter network (also known as
+            a DMZ, or demilitarized zone, or screened subnet). For
+            information on contacting your hardware manufacturer or
+            ISP, see the <a href="#References">References</a>
+            section in this article.</p>
+
+            <p class="SubHead2">Download and install the latest
+            hardware firmware</p>
+
+            <p>You also want to make sure to have the latest
+            firmware for your network hardware installed. The
+            manufacturer may have released a firmware update for a
+            router that resolves a particular issue in Flight
+            Simulator. Firmware updates can also install or improve
+            upon existing features of the device, such as Universal
+            Plug and Play. For information about how to contact
+            hardware manufacturers or ISPs, see the <a href=
+            "#References">References</a> section in this
+            article.</p><a name="VerifyDirectXPorts"></a>
+
+            <p class="SubHead">Verify the Required DirectX
+            Ports</p>
+
+            <p>To be able to play Flight Simulator over the
+            Internet, the required ports should be open.</p>
+
+            <p><strong>Note:</strong> In a client/server environment, only a
+            network administrator is authorized to change port
+            configurations.</p>
+
+            <p>For information about DirectPlay ports, visit
+            <strong>support.microsoft.com</strong> and search for <strong>Article 240429
+            DirectX: Ports Required to Play on a Network</strong> in the
+            Microsoft Knowledge Base. (You will need an Internet
+            connection to access this information.)</p>
+
+            <p>To view specific ports that Flight Simulator
+            requires, visit the Network Troubleshooting Resource
+            Center at
+            <strong>support.microsoft.com/?pr=gmsnetw</strong>.</p><a name=
+            "FirewallConflicts"></a>
+
+            <p class="SubHead">Firewall Conflicts</p>
+
+            <p>A software firewall&#8212;a security system that
+            acts as a protective boundary between a network and the
+            outside world&#8212;can prevent your computer from
+            connecting to other computers or servers for a
+            multiplayer session.</p>
+
+            <p>You can look in the notification area, at the far right 
+			of the taskbar to see if a
+            firewall is running on your computer. You may need to show all 
+			icons in the System Tray in
+            order to reveal your firewall icon. To see what program
+			 an icon represents, pause the mouse pointer over
+            the icon and wait. Common software firewalls
+            include Microsoft Internet Connection Firewall, ZoneAlarm, Norton Internet 
+			Security, McAfee Security, and BlackIce. Once you find the icon for your
+            firewall, right-click to reveal a menu that may allow
+            you to temporarily disable the firewall.</p>
+
+            <p>If disabling the firewall resolves the issue,
+            contact the firewall's manufacturer for directions on
+            how to configure it to work with Flight Simulator. See
+            the <a href="#References">References</a> section of
+            this article for information on how to contact many
+            hardware and software manufacturers.</p><a name=
+            "DisableICF"></a>
+
+            <p class="SubHead">Disable ICF</p>
+
+            <p>The latest version of Windows includes Internet
+            Connection Firewall (ICF) software that you can use to
+            restrict information communicated between the Internet
+            and your home network or small-office network. ICF also
+            protects a single computer connected to the Internet
+            via a cable modem, a DSL modem, or a dial-up modem.</p>
+
+            <p>You should not enable the firewall on any connection
+            that does not directly connect to the Internet, and ICF
+            is also not needed if your network already has a
+            firewall or proxy server.</p>
+
+            <p>For information about ICF, visit
+            <strong>support.microsoft.com</strong> and search for the
+            following articles in the Microsoft Knowledge Base:</p>
+
+            <ul>
+              <li><strong>Article 283673: Enable or Disable Internet
+              Connection Firewall in Windows XP</strong></li>
+
+              <li><strong>Article 234815: Description of Internet
+              Connection Sharing</strong></li>
+
+              <li><strong>Article 320855: Description of the Windows XP
+              Internet Connection Firewall</strong></li>
+            </ul>
+
+            <p>(You will need an Internet connection to access this
+            information.)</p><a name="WirelessNetworks"></a>
+
+            <p class="SubHead">Check Your Wireless Network</p>
+
+            <p>Depending on the distances involved, the
+            construction of your home, and sources of interference,
+            you may not get the best performance from a wireless
+            connection.</p>
+
+            <table border="0" cellspacing="0" cellpadding="0"
+            class="SideBarTable" summary="SummaryTBD">
+              <tr>
+                <td>
+                  <p><strong>To verify the quality of your wireless
+                  connection</strong></p>
+
+                  <ol>
+                    <li>Click <strong>Start</strong>, then point to 
+					<strong>Settings</strong>, and then click <strong>Control
+                    Panel</strong>.</li>
+
+                    <li>Click <strong>Network and Internet Connections</strong>.</li>
+
+					<li>Click <strong>Network Connections</strong>.</li>
+					
+                    <li>Double-click the name of your network.</li>
+
+                    <li>Note the status in the <strong>Connection</strong>
+                    pane.</li>
+                  </ol>
+                </td>
+              </tr>
+            </table>
+
+            <table border="0" cellspacing="0" cellpadding="0"
+            class="SideBar" summary="SummaryTBD">
+              <tr>
+                <td>
+                  <p class="SubHead2">Multiplayer Troubleshooting
+                  Glossary</p>
+
+                  <p><strong>firewall:</strong> A security system that helps
+                  protect a network from external threats, such as
+                  hacker attacks. A hardware firewall is a
+                  connection routing device equipped with specific
+                  data-checking settings that helps protect all of
+                  the devices connected to it. A software firewall
+                  resides on a single computer, helping to protect
+                  that computer from external threats.</p>
+
+                  <p><strong>firmware:</strong> Software information stored
+                  in nonvolatile memory on a device.</p>
+
+                  <p><strong>gateway:</strong> See router.</p>
+
+                  <p><strong>hub:</strong> A device equipped with multiple
+                  ports that serves as a central connection point
+                  for communication lines from all devices on a
+                  network. When data arrives at one port, it is
+                  copied to the other ports.</p>
+
+                  <p><strong>ICF (Internet Connection Firewall):</strong>
+                  Firewall software used to set restrictions on
+                  what information is communicated between a
+                  network and the Internet.</p>
+
+                  <p><strong>ICS (Internet Connection Sharing):</strong> A
+                  software feature in Windows that allows computers
+                  on a network to access online services through a
+                  single Internet connection.</p>
+
+                  <p><strong>perimeter network:</strong> A collection of
+                  devices and subnets placed between a private
+                  network and the Internet to help protect the
+                  private network from unauthorized Internet users.
+                  Also known as a DMZ (demilitarized zone) and a
+                  screened subnet.</p>
+
+                  <p><strong>port:</strong> A physical connection through
+                  which data is transferred between a computer and
+                  other devices (such as a monitor, modem, or
+                  printer), a network, or another computer. Also
+                  refers to a software channel for network
+                  communications.</p>
+
+                  <p><strong>router:</strong> A device (also known as a
+                  gateway) that acts as a central point for
+                  networked devices, receiving transmitted messages
+                  and forwarding them.</p>
+
+                  <p><strong>switch:</strong> A central device that functions
+                  similarly to a hub, forwarding packets to
+                  specific ports rather than broadcasting every
+                  packet to every port. A switch is more efficient
+                  when used on a high-volume network.</p>
+                </td>
+              </tr>
+            </table>
+
+            <p>For information about how to troubleshoot wireless
+            networks, visit <strong>support.microsoft.com</strong> and search
+            for <strong>Article 313242: How to Troubleshoot Wireless
+            Network Connections in Windows XP</strong> in the Microsoft
+            Knowledge Base. (You will need an Internet connection
+            to access this information.)</p><a name="DialUpDrivers"></a>
+
+            <p class="SubHead">Dial-Up Modem Drivers</p>
+
+            <p><strong>Important note:</strong> A broadband Internet
+			connection is highly recommended for multiplayer sessions in
+			Flight Simulator. Broadband is required for voice communication
+			in Flight Simulator.</p>
+			
+			<p>Contact your hardware manufacturer to obtain the
+            latest dial-up driver update. See the <a href="#References">References</a>
+			 section of this article for information on how to contact many
+            hardware manufacturers.</p>
+
+            <p>If dial-up issues continue to occur, you may want to
+            try another ISP. Depending on the
+            severity of your connection issues, a faster Internet
+            connection might offer a solution. DSL and cable modem
+            connections are a great way for Flight Simulator users
+            to improve multiplayer performance.</p><a name="PlugAndPlayNetworks"></a>
+
+            <p class="SubHead">Universal Plug and Play Networks</p>
+
+            <p>Universal Plug and Play (UPnP) is more than just a
+            simple extension of the Plug and Play peripheral model.
+            It is designed to support zero-configuration,
+            &quot;invisible&quot; networking, along with automatic discovery
+            for a breadth of device categories from a wide range of
+            vendors.</p>
+
+            <p>With UPnP, a device can dynamically join a network,
+            obtain an IP address, convey its capabilities, and
+            learn about the presence and capabilities of other
+            devices&#8212;all automatically. Devices can
+            subsequently communicate with each other directly,
+            thereby further enabling peer-to-peer networking.</p>
+
+            <p>If you are buying new hardware, look for the UPnP
+            logo on the box. If you have UPnP hardware as part of
+            your existing network, confirm that it is enabled or
+            contact the manufacturer for assistance. See the
+            <a href="#References">References</a> section of this
+            article for information on how to contact many hardware
+            manufacturers.</p><a name="References"></a>
+
+            <p class="SubHead">References</p>
+
+            <p>Microsoft provides third-party contact information
+            to help you find technical support. This contact
+            information may change without notice. Microsoft does
+            not guarantee the accuracy of this third-party contact
+            information.</p>
+
+            <p>For information about how to contact your video
+            adapter manufacturer, visit <strong>support.microsoft.com</strong> and
+            search for the following articles in the Microsoft
+            Knowledge Base:</p>
+
+            <ul>
+              <li><strong>Article 65416: Hardware and Software
+              Third-Party Vendor Contact List, A-K</strong></li>
+
+              <li><strong>Article 60781: Hardware and Software
+              Third-Party Vendor Contact List, L-P</strong></li>
+
+              <li><strong>Article 60782: Hardware and Software
+              Third-Party Vendor Contact List, Q-Z</strong></li>
+            </ul>
+
+            <p>(You will need an Internet connection to access this
+            information.)</p>
+
+            <p>The third-party products discussed in this article
+            are manufactured by companies that are independent of
+            Microsoft. Microsoft makes no warranty, implied or
+            otherwise, regarding the performance or reliability of
+            these products.</p>
+          </div>
+
+          <div class="TopLink">
+            <a href="#top" class="TopLink">- top -</a>
+          </div>
+        </td>
+      </tr>
+    </table>
+  
+</body>
+</html>

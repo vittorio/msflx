@@ -1,0 +1,981 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Windows (vers 12 April 2005), see www.w3.org">
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=iso-8859-1">
+
+  <title>Troubleshooting Basics</title>
+  <link href="../../common/style.css" rel="stylesheet" type=
+  "text/css">
+  
+    <style type="text/css">
+<!--
+.borderTable { 
+border: 1px solid #000000;
+th: 1px solid #000000;
+td: 1px solid #000000;
+border-collapse: collapse;
+}
+-->
+</style>
+
+</head>
+
+<body class="stdcolor" >
+  
+    <a name="top"></a>
+
+    <table width="100%" cellpadding="0" cellspacing="10" summary="SummaryTBD">
+      <tr>
+        <td>
+          <table width="100%" border="0" cellspacing="0"
+          cellpadding="0" summary="SummaryTBD">
+            <tr>
+              <td class="GSTable"><span class=
+              "GSH1">Troubleshooting Basics</span></td>
+            </tr>
+
+            <tr>
+              <td bgcolor="#000000"><img src=
+              "../../Common/images/1ptrans.gif" width="1" height=
+              "1" alt="" border="0"></td>
+            </tr>
+          </table>
+
+          <div class="articleDeck">
+            Resolve problems and get back to flying
+          </div>
+
+		  <div class="article-bodycopy">
+		  
+		  <p>Most problems that you encounter when running Flight Simulator are
+		  related to conflicts between hardware components or problems with
+		  manufacturer's hardware drivers. You can troubleshoot many of these
+		  problems yourself following the steps below.</p>
+
+            <table border="0" cellspacing="10" cellpadding="0"
+            align="right" summary="SummaryTBD">
+              <tr>
+                <td>
+                  <span class="TOCsubhead">Contents</span><br>
+
+                  <table border="0" cellspacing="5" cellpadding="0"
+                  class="RelatedLinkTableThin" summary="SummaryTBD">
+                    <tr class="article-bodycopy">
+                      <td valign="top"><img src=
+                      "../../Common/images/RelatedBullet.gif"
+                      width="6" height="12" alt="" border="0"></td>
+
+                      <td>Video Drivers</a></td>
+                    </tr>
+					
+					<tr class="article-bodycopy">
+                      <td valign="top"><img src=
+                      "../../Common/images/RelatedBullet.gif"
+                      width="6" height="12" alt="" border="0"></td>
+
+                      <td><a href="#SoundDrivers">Sound Drivers</a></td>
+                    </tr>
+					
+					<tr class="article-bodycopy">
+                      <td valign="top"><img src=
+                      "../../Common/images/RelatedBullet.gif"
+                      width="6" height="12" alt="" border="0"></td>
+
+                      <td><a href="#DirectXIssues">DirectX
+                      Issues</a></td>
+                    </tr>
+					
+					<tr class="article-bodycopy">
+                      <td valign="top"><img src=
+                      "../../Common/images/RelatedBullet.gif"
+                      width="6" height="12" alt="" border="0"></td>
+
+                      <td><a href="#GraphicsIssues">Graphics Issues</a></td>
+                    </tr>
+					
+					<tr class="article-bodycopy">
+                      <td valign="top"><img src=
+                      "../../Common/images/RelatedBullet.gif"
+                      width="6" height="12" alt="" border="0"></td>
+
+                      <td><a href="#AddOnCompatibility">Add-on Compatibility</a></td>
+                    </tr>
+
+                    <tr class="article-bodycopy">
+                      <td valign="top"><img src=
+                      "../../Common/images/RelatedBullet.gif"
+                      width="6" height="12" alt="" border="0"></td>
+
+                      <td><a href=
+                      "#OutofMemoryMessages">Out-of-Memory
+                      Messages</a></td>
+                    </tr>
+
+                    <tr class="article-bodycopy">
+                      <td valign="top"><img src=
+                      "../../Common/images/RelatedBullet.gif"
+                      width="6" height="12" alt="" border="0"></td>
+
+                      <td><a href=
+                      "#Clues">Clues About Error Messages</a></td>
+                    </tr>
+
+                    <tr class="article-bodycopy">
+                      <td valign="top"><img src=
+                      "../../Common/images/RelatedBullet.gif"
+                      width="6" height="12" alt="" border="0"></td>
+
+                      <td><a href=
+                      "#ComputerSystemRequirements">Computer
+                      System Requirements</a></td>
+                    </tr>
+
+                    <tr class="article-bodycopy">
+                      <td valign="top"><img src=
+                      "../../Common/images/RelatedBullet.gif"
+                      width="6" height="12" alt="" border="0"></td>
+
+                      <td><a href=
+                      "#ConflictingPrograms">
+                      Conflicting Programs</a></td>
+                    </tr>
+
+                    <tr class="article-bodycopy">
+                      <td valign="top"><img src=
+                      "../../Common/images/RelatedBullet.gif"
+                      width="6" height="12" alt="" border="0"></td>
+
+                      <td><a href=
+                      "#Reinstalling">Reinstalling
+                      Flight Simulator</a></td>
+                    </tr>
+
+                    <tr class="article-bodycopy">
+                      <td valign="top"><img src=
+                      "../../Common/images/RelatedBullet.gif"
+                      width="6" height="12" alt="" border="0"></td>
+
+                      <td><a href=
+                      "#GatheringInformationDirectX">Gathering
+                      Information in DirectX</a></td>
+                    </tr>
+
+                    <tr class="article-bodycopy">
+                      <td valign="top"><img src=
+                      "../../Common/images/RelatedBullet.gif"
+                      width="6" height="12" alt="" border="0"></td>
+
+                      <td><a href="#OnlineResources">Online
+                      Resources</a></td>
+                    </tr>
+
+                    <tr>
+                      <td colspan="2" align="center"><img src=
+                      "../../Common/images/1ptrans.gif" width="1"
+                      height="1" alt="" border="0"></td>
+                    </tr>
+                  </table>
+
+                  <span class="TOCsubhead">Related Links</span>
+
+                  <table border="0" cellspacing="5" cellpadding="0"
+                  class="RelatedLinkTableThin" summary="SummaryTBD">
+                    <tr class="article-bodycopy">
+                      <td valign="top"><img src=
+                      "../../Common/images/RelatedBullet.gif"
+                      width="6" height="12" alt="" border="0"></td>
+
+                      <td><a href="TroubleShooting.htm">Controller
+                      Troubleshooting Basics</a></td>
+                    </tr>
+
+                    <tr class="article-bodycopy">
+                      <td valign="top"><img src=
+                      "../../Common/images/RelatedBullet.gif"
+                      width="6" height="12" alt="" border="0"></td>
+
+                      <td><a href="TroubleShooting2.htm">Advanced
+                      Controller Troubleshooting</a></td>
+                    </tr>
+
+                    <tr class="article-bodycopy">
+                      <td valign="top"><img src=
+                      "../../Common/images/RelatedBullet.gif"
+                      width="6" height="12" alt="" border="0"></td>
+
+                      <td><a href=
+                      "TroubleShootingMultiplayer.htm">Troubleshooting
+                      Multiplayer Connections</a></td>
+                    </tr>
+
+                    <tr class="article-bodycopy">
+                      <td valign="top"><img src=
+                      "../../Common/images/RelatedBullet.gif"
+                      width="6" height="12" alt="" border="0"></td>
+
+                      <td><a href="Support.htm">Contacting
+                      Technical Support</a></td>
+                    </tr>
+
+                    <tr>
+                      <td colspan="2" align="center"><img src=
+                      "../../Common/images/1ptrans.gif" width="1"
+                      height="1" alt="" border="0"></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+			
+			<p class="SubHead">Restarting Flight Simulator</p>
+			
+			<p>If Flight Simulator stops responding, try
+            restarting the simulator before you try anything else. 
+			The problem might not be obvious, but it may be a one-time 
+			issue that never occurs again. 
+			If Flight Simulator stops responding repeatedly,
+            try the steps below to troubleshoot your issue.</p><a name="Video Drivers"></a>
+
+            <p class="SubHead">Video Drivers</p>
+
+            <p>Drivers are small software programs that allow your
+            operating system to communicate with the hardware in
+            your computer. Beyond acting as a translator, a driver can
+            also enhance the operation of a particular piece of
+            hardware, such as a video adapter or a sound card. A
+            damaged or outdated video driver can cause program errors.</p>
+
+            <p>The manufacturer of
+            your video or sound device probably offers free driver
+            updates on their Web site. Contact your computer vendor or
+            video card manufacturer to inquire about obtaining 
+			 and installing the latest version of the driver for your 
+			 video adapter.</p>
+			 
+			 <table border="0" cellspacing="0" cellpadding="0"
+            class="SideBarTable" summary="SummaryTBD">
+              <tr>
+                <td>
+                  <p><strong>To determine who made your video card</strong></p>
+
+                  <ol>
+                    <li>Click <strong>Start</strong>, point to
+                    <strong>Settings</strong>, and then click <strong>Control
+                    Panel</strong>.</li>
+
+                    <li>Double-click <strong>System</strong>.</li>
+
+                    <li>On the <strong>Hardware</strong> tab, click <strong>
+					Device Manager</strong>.</li>
+
+                    <li>Click the plus symbol next to
+                    <strong>Display Adapters</strong> to expand the branch.</li>
+					
+					<li>Double-click a device in the list.</li>
+					
+					<li>On the <strong>General</strong> tab, look for the
+					manufacturer name.</li>
+                  </ol>
+				  <p>The manufacturers name appears in the name of the adapter.</p>
+                </td>
+              </tr>
+            </table>
+
+            <p>For information about how to contact your video
+            adapter manufacturer, visit
+            <strong>support.microsoft.com</strong> and search for the
+            following articles in the Microsoft Knowledge Base:</p>
+
+            <ul>
+              <li><strong>Article 65416: Hardware and Software
+              Third-Party Vendor Contact List, A-K</strong></li>
+
+              <li><strong>Article 60781: Hardware and Software
+              Third-Party Vendor Contact List, L-P</strong></li>
+
+              <li><strong>Article 60782: Hardware and Software
+              Third-Party Vendor Contact List, Q-Z</strong></li>
+            </ul>
+
+            <p>(You will need an Internet connection to access this
+            information.)</p><a name="SoundDrivers"></a>
+
+            <p class="SubHead">Sound Drivers</p>
+
+            <p>To determine if the sound driver is causing a problem,
+             disable the sound card.</p>
+
+            <table border="0" cellspacing="0" cellpadding="0"
+            class="SideBarTable" summary="SummaryTBD">
+              <tr>
+                <td>
+                  <p><strong>To disable the sound card</strong></p>
+
+                  <ol>
+                    <li>Click <strong>Start</strong>, point to
+                    <strong>Settings</strong>, and then click <strong>Control
+                    Panel</strong>.</li>
+
+                    <li>Double-click <strong>Sounds and Audio Devices</strong>.</li>
+
+                    <li>On the <strong>Hardware</strong> tab, select the audio
+					device you want to disable, then click <strong>Properties</strong>.</li>
+
+                    <li>In the <strong>Device usage</strong> list, select 
+					<strong>Do not use this device (disable)</strong>.</li>
+
+                    <li>Click <strong>OK</strong>.</li>
+
+                    <li>Restart your computer.</li>
+                  </ol>
+                </td>
+              </tr>
+            </table>
+
+            <p><strong>Note:</strong> If you continue to experience issues
+            after disabling the sound card, undo the steps above
+            and then update your sound card drivers.</p>
+
+            <table border="0" cellspacing="0" cellpadding="0"
+            class="SideBarTable" summary="SummaryTBD">
+              <tr>
+                <td>
+                  <p><strong>To determine the version of your sound card
+                  and its drivers</strong></p>
+
+                  <ol>
+                    <li>Click <strong>Start</strong>, and then click
+                    <strong>Run</strong>.</li>
+
+                    <li>Type <em><strong>dxdiag</strong></em> in the 
+					<strong>Open</strong> box, and
+                    then click <strong>OK</strong>. If you get a message asking if you
+					want to proceed, click <strong>Yes</strong>.</li>
+
+                    <li>In the <strong>DirectX Diagnostic Tool</strong>
+                    dialog box, click the <strong>Sound</strong>.</li>
+
+                    <li>In the <strong>Device</strong> area, note the name
+                    of your device on the <strong>Name</strong> line.</li>
+
+                    <li>In the <strong>Drivers</strong> field, note the
+                    version number on the <strong>Version</strong> line.</li>
+
+                    <li>When you have noted the version numbers for
+                    the sound card installed on your computer,
+                    click <strong>Exit</strong>.</li>
+                  </ol>
+                </td>
+              </tr>
+            </table>
+
+            <p>For information about how to contact your sound
+            card manufacturer, visit
+            <strong>support.microsoft.com</strong> and search for the
+            following articles in the Microsoft Knowledge Base:</p>
+
+            <ul>
+              <li><strong>Article 65416: Hardware and Software
+              Third-Party Vendor Contact List, A-K</strong></li>
+
+              <li><strong>Article 60781: Hardware and Software
+              Third-Party Vendor Contact List, L-P</strong></li>
+
+              <li><strong>Article 60782: Hardware and Software
+              Third-Party Vendor Contact List, Q-Z</strong></li>
+            </ul>
+
+            <p>(You will need an Internet connection to access this
+            information.)</p>
+
+            <p>If you update your sound card drivers and you still
+            have problems in Flight Simulator, try reducing <strong>Sound
+            Acceleration</strong> in Windows.</p>
+
+            <table border="0" cellspacing="0" cellpadding="0"
+            class="SideBarTable" summary="SummaryTBD">
+              <tr>
+                <td>
+                  <p><strong>To reduce hardware sound
+                  acceleration</strong></p>
+
+                  <ol>
+                    <li>Click <strong>Start</strong>, and then click
+                    <strong>Run</strong>.</li>
+
+                    <li>Type <em><strong>dxdiag</strong></em> in the 
+					<strong>Open</strong> box, and
+                    then click <strong>OK</strong>.</li>
+
+                    <li>In the <strong>DirectX Diagnostic Tool</strong>
+                    dialog box, click the <strong>Sound</strong> tab.</li>
+
+                    <li>Under <strong>DirectX Features</strong>, move the
+                    <strong>Hardware Sound Acceleration Level</strong> slider
+                    left to the <strong>No acceleration</strong> setting.</li>
+
+                    <li>Click <strong>Exit</strong>.</li>
+                  </ol>
+                </td>
+              </tr>
+            </table><a name="DirectXIssues"></a>
+
+            <p class="SubHead">DirectX Issues</p>
+
+            <p>DirectX is a Windows component that allows software
+            programs to communicate well with computer hardware.
+            Games and simulations use DirectX to communicate with
+            your sound card, video card, and game controllers. For
+            more information about DirectX, or to download and
+            install the latest version, visit
+            <strong>www.microsoft.com/directx</strong>. (You will need an
+            Internet connection to access this 
+			information.)</p><a name="GraphicsIssues"></a>
+
+            <p class="SubHead">Graphics Issues</p>
+
+            <p>Flight Simulator automatically determines during setup 
+			the display settings that are best for
+            the hardware on your computer. If the graphics (terrain, textures, and other
+            visuals) in the simulator don't display correctly, 
+			there are a number of steps you can take. You can try
+            selecting different settings (see <a href=
+            "../options/ChangingGraphicSettings.htm">Changing
+            Graphic Settings</a>).</p>
+
+            <p>It's important to check the readme file to see if
+            there are known issues with the video card in your
+            computer. Video card manufacturers often update the
+            drivers and make them
+            available for download from their Web sites. The Readme
+            file lists known problems and provides links to the
+            manufacturers' Web sites. To view the readme file,
+            double-click the <strong>Readme.rtf</strong> file in your Flight
+            Simulator folder.</p><a name="AddOnCompatibility"></a>
+
+            <p class="SubHead">Add-on Compatibility</p>
+
+            <p>There are thousands of third-party aircraft, scenery, and
+			other software products for Flight Simulator. We work to ensure
+			backward compatibility with these products for two versions, meaning that if the
+			product was developed for Flight Simulator 2002, it should work
+			on Flight Simulator X if the following requirements are met:</p>
+			
+			<ul>
+				<li>The manufacturer followed the Software
+				Developer's Kit for Flight Simulator.</li>
+				
+				<li>The software is correctly installed.</li>
+			</ul>
+
+			<p><strong>Note:</strong> While we work to ensure compatibility with 
+			third-party addons, Microsoft Support does not provide assistance with
+			these programs. If your add-on software is not working with Flight Simulator X,
+			please contact the software 
+			manufacturer.</p><a name="OutofMemoryMessages"></a>
+
+            <p class="SubHead">Out-of-Memory Messages</p>
+
+            <p>Run <strong>Disk Cleanup</strong> if you receive an error
+            message that states:</p>
+
+            <blockquote>
+              &quot;Your computer has run out of available memory.
+              Flight Simulator will now exit. You may not have
+              enough free space on your hard drive. Run Disk
+              Cleanup to free up space, and then try running Flight
+              Simulator again.&quot;
+            </blockquote>
+
+            <table border="0" cellspacing="0" cellpadding="0"
+            class="SideBarTable" summary="SummaryTBD">
+              <tr>
+                <td>
+                  <p><strong>To run Disk Cleanup</strong></p>
+
+                  <ol>
+                    <li>On the <strong>Start</strong> menu, point to
+                    <strong>Programs</strong>, point to <strong>Accessories
+					</strong>, point to <strong>System
+                    tools</strong>, and then click <strong>Disk
+                    Cleanup</strong>.</li>
+
+                    <li>Follow the instructions on the screen.</li>
+                  </ol>
+                </td>
+              </tr>
+            </table><a name="Clues"></a>
+
+            <p class="SubHead">Clues About Error Messages</p>
+
+            <p>Sometimes, you can determine the cause of the
+            problem by noting what occurred just before you
+            received the error message, whether the problem also
+            occurs in other programs, or if the problem occurs
+            every time you attempt to perform a particular
+            action.</p>
+
+            <p>To determine the cause of the problem, answer the
+            following questions:</p>
+
+            <ul>
+              <li>Are other programs running on your computer when
+              you receive the error message?</li>
+
+              <li>Is this a known issue with Flight Simulator?</li>
+
+              <li>Does the problem only occur during a particular
+              action?</li>
+
+              <li>Does the problem occur in other programs?</li>
+
+              <li>Can you reproduce the problem, or does it occur
+              randomly?</li>
+            </ul>
+
+            <p>The following sections discuss each question and
+            possible resolutions.</p>
+
+            <p class="SubHead2">Are Other Programs Running on your
+            Computer When You Receive the Error Message?</p>
+
+            <p>You can prevent or resolve many error messages by
+            exiting all programs that are running on your computer
+            before you start <strong>Flight Simulator</strong>.</p>
+
+            
+            <table border="0" cellspacing="0" cellpadding="0"
+            class="SideBarTable" summary="SummaryTBD">
+              <tr>
+                <td>
+                  <p><strong>To exit all programs</strong></p>
+
+                  <ol>
+                    <li>Press <strong>CTRL+ALT+DELETE</strong> to display the
+                    <strong>Windows Task Manager</strong>.</li>
+
+                    <li>On the <strong>Applications</strong> tab, click any
+                    program, and then click <strong>End Task</strong>. Repeat
+                    this step to exit all programs.</li>
+
+                    <li>Exit Windows <strong>Task Manager</strong>.</li>
+                  </ol>
+                </td>
+              </tr>
+            </table>
+
+            <p class="SubHead2">Is the Problem a Known Issue with
+            Flight Simulator?</p>
+
+            <p>Certain &quot;invalid page fault&quot; or &quot;fatal exception&quot;
+            error messages only occur when specific conditions are
+            true. For more information about how to resolve
+            specific error messages, search the Microsoft Knowledge
+            Base at <strong>support.microsoft.com</strong> for the exact text
+            of the error message. (You will need an Internet
+            connection to access this information.)</p>
+
+            <p class="SubHead2">Does the Problem Only Occur During
+            a Particular Action?</p>
+
+            <p>If you receive the error message only when you
+            perform a specific action or set of actions in Flight
+            Simulator, the actions that trigger the error message
+            may provide clues about which solutions you should try
+            first.</p>
+
+            <p>For example, if you only receive the error message
+            when you press a programmed button on your joystick,
+            you may want to disable programmed buttons, update the
+            joystick software, or even update the sound driver for
+            your sound card if the joystick is connected to the
+            game port on your sound card.</p>
+
+            <p class="SubHead2">Does the Problem Occur in Other
+            Programs?</p>
+
+            <p>If the problem occurs in other programs, the problem
+            most likely is caused by an outdated device driver, a
+            damaged or missing component of Windows, or another
+            program that is running in the background.</p>
+
+            <table border="0" cellspacing="0" cellpadding="0"
+            class="note" summary="SummaryTBD">
+              <tr>
+                <td>
+                  <p><strong>Note:</strong> Some of the troubleshooting 
+				  tips and possible solutions in this topic may help with 
+				  these issues, but the focus of this topic is to resolve 
+				  error messages that are specific to Flight Simulator. 
+				  If the information in this topic doesn't resolve problems 
+				  that occur in other programs, you may want to look for 
+				  information about troubleshooting problems in other 
+				  programs running on your computer.</p>
+                </td>
+              </tr>
+            </table>
+
+            <p class="SubHead2">Can You Reproduce the Problem, or
+            Does It Occur Randomly?</p>
+
+            <p>If you always receive the error message each time
+            you perform a specific action or set of actions, use
+            one of the suggested resolutions for the problem, and
+            then perform that action or set of actions again. If
+            you no longer receive the error message, assume that
+            the problem is resolved. If you continue to receive the
+            error message, you need to continue troubleshooting the
+            problem.</p>
+
+            <p>If you cannot easily reproduce the problem, use one
+            of the suggested resolutions for the problem, and then
+            fly Flight Simulator until you feel comfortable that
+            the problem is resolved. If you continue to receive the
+            error message, try another possible resolution.</p>
+
+            <p><strong>Note:</strong> Be sure to keep track of the
+            resolutions that you have tried, along with the results
+            for each one.</p><a name=
+            "ComputerSystemRequirements"></a>
+
+            <p class="SubHead">Computer System Requirements</p>
+
+            <p>In addition to requiring a computer with the Windows
+			operating system, Flight Simulator runs best on systems configured
+			as indicated in the following table.</p>
+
+            <table  width="75%" bgcolor="#003366" border="0" cellspacing="1" cellpadding="5"
+			border="0" class="article-bodycopy" summary="SummaryTBD">
+
+              <tr bgcolor="F5DEB3">
+                <th  valign="center"><strong>Item</strong></th>
+				<th  valign="bottom"><strong>Minimum</strong></th>
+				<th  valign="bottom"><strong>Recommended</strong></th>
+				<th  valign="bottom"><strong>Best</strong></th>
+              </tr>
+
+              <tr bgcolor="FFFFFF">
+                <td  align="left" valign="top">CPU</td>
+				<td  align="center" valign="top">1.0 GHz</td>
+				<td  align="center" valign="top">2.8 GHz</td>
+				<td  align="center" valign="top">3.6 GHz</td>
+              </tr>
+			  
+			  <tr bgcolor="FFFFFF">
+                <td  align="left" valign="top">Memory</td>
+				<td  align="center" valign="top">256 MB</td>
+				<td  align="center" valign="top">1 GB</td>
+				<td  align="center" valign="top">2 GB</td>
+              </tr>
+			  
+			  <tr bgcolor="FFFFFF">
+                <td  align="left" valign="top">Video card</td>
+				<td  align="center" valign="top">32 MB</td>
+				<td  align="center" valign="top">64 MB</td>
+				<td  align="center" valign="top">512 MB</td>
+              </tr>
+			  
+			  <tr bgcolor="FFFFFF">
+                <td  align="left" valign="top">Internet</td>
+				<td  align="center" valign="top">56.6 modem</td>
+				<td  align="center" valign="top">Broadband</td>
+				<td  align="center" valign="top">Broadband</td>
+              </tr>
+			  
+			  <tr bgcolor="FFFFFF">
+                <td  align="left" valign="center">Other</td>
+				<td colspan="3"  align="center" valign="top">
+				Sound card<br>Speakers or headphones<br>Joystick or Xbox 360
+				 Controller for Windows<br>Microphone (required for RT voice)</td>
+              </tr>
+             </tr>
+            </table>
+
+            <p>Be sure to download and install the latest Windows Service Pack from
+            <strong>www.microsoft.com/windows/default.asp</strong>. (You will
+            need an Internet connection to download this
+            update.)</p><a name=
+            "ConflictingPrograms"></a>
+
+            <p class="SubHead2">Are Any Programs Conflicting with
+            Flight Simulator?</p>
+
+            <p>When you start Microsoft Windows, other software may
+            start along with the operating system. These programs,
+            which may include antivirus and system utility
+            programs, can interfere with Flight Simulator.
+            Consequently, you may 
+            receive an error message, or
+            Flight Simulator may stop responding. You can set up your computer to
+            perform a clean boot, which prevents other programs from
+            starting automatically.</p>
+
+            <table border="0" cellspacing="0" cellpadding="0"
+            class="SideBarTable" summary="SummaryTBD">
+              <tr>
+                <td>
+                  <p><strong>To perform a clean boot on Windows XP</strong></p>
+
+                  <ol>
+                    <li>Click <strong>Start</strong>, and then click
+                    <strong>Run</strong>.</li>
+
+                    <li>In the <strong>Open</strong> box, type
+                    <strong>msconfig</strong>, and then click <strong>OK</strong>.</li>
+
+                    <li>In the <strong>System Configuration Utility</strong>,
+                    click the <strong>General</strong> tab, and then click
+                    <strong>Selective Startup</strong>.</li>
+
+                    <li>Under <strong>Selective Startup</strong>, clear 
+					the following check boxes:
+
+                      <ul>
+                        <li><strong>Process SYSTEM.INI file</strong></li>
+
+                        <li><strong>Process WIN.INI file</strong></li>
+
+                        <li><strong>Load Startup Items</strong></li>
+                      </ul>
+                    </li>
+
+                    <li>Click the <strong>Services</strong> tab.</li>
+
+                    <li>Select the <strong>Hide All Microsoft
+                    Services</strong> check box, then click
+                    <strong>Disable All</strong>.</li>
+
+                    <li>Click <strong>OK</strong>.</li>
+					
+					<li>Click <strong>Restart</strong>.</li>
+                  </ol>
+
+                  <p><strong>Note:</strong> To complete this procedure, you
+                  must be logged on as an administrator or as a member
+                  of the Administrators group. If your computer is
+                  connected to a network, network policy settings
+                  may prevent you from completing this
+                  procedure.</p>
+                </td>
+              </tr>
+            </table><br>
+
+            <table border="0" cellspacing="0" cellpadding="0"
+            class="SideBarTable" summary="SummaryTBD">
+              <tr>
+                <td>
+                  <p><strong>To restore to a normal startup</strong></p>
+
+                  <ol>
+                    <li>Click <strong>Start</strong>, and then click
+                    <strong>Run</strong>.</li>
+
+                    <li>In the <strong>Open</strong> box, type
+                    <strong>msconfig</strong>, and then click <strong>OK</strong>.</li>
+
+                    <li>In the <strong>System Configuration Utility</strong>,
+                    click the <strong>General</strong> tab.</li>
+
+                    <li>Click <strong>Normal Startup</strong>.</li>
+
+                    <li>Click <strong>OK</strong>.</li>
+
+                    <li>Click <strong>Restart</strong>.</li>
+                  </ol>
+                </td>
+              </tr>
+            </table><br>
+
+            <p>For additional information about how to perform a clean boot,
+            visit <strong>support.microsoft.com</strong> and search for
+            <strong>Article 331796: How to Perform a Clean Boot to
+            Prevent Background Programs from Interfering with
+            Play</strong> in the Microsoft Knowledge Base. (You will
+            need an Internet connection to access this
+            information.)</p><a name="Reinstalling"></a>
+
+            <p class="SubHead">Reinstalling Flight Simulator</p>
+
+            <p>If the troubleshooting steps above have not resolved
+            the problem, uninstall Flight Simulator, perform a clean boot
+            of your computer (see <a href=
+            "#ConflictingPrograms">
+            Are any programs conflicting with the simulator?</a>
+            section earlier in this article), delete the Flight
+            Simulator folder, and then reinstall Flight
+            Simulator.</p>
+
+            <table border="0" cellspacing="0" cellpadding="0"
+            class="SideBarTable" summary="SummaryTBD">
+              <tr>
+                <td>
+                  <p><strong>To uninstall Flight Simulator</strong></p>
+
+                  <ol>
+                    <li>Exit all programs that are
+                    running on your computer.</li>
+					
+					<li>Click <strong>Start</strong>, point to
+                    <strong>Settings</strong>, and then click <strong>Control
+                    Panel</strong>.</li>
+
+                    <li>Double-click <strong>Add/Remove Programs</strong>.</li>
+
+                    <li>In the <strong>Currently installed programs</strong> list, click
+                    <strong>Microsoft Flight Simulator</strong>, then
+                    click <strong>Change/Remove</strong>.</li>
+
+                    <li>Click <strong>Uninstall</strong>.</li>
+
+                    <li>When you are prompted to confirm the
+                    deletion of Flight Simulator, click
+                    <strong>Yes</strong>.</li>
+              
+                  </ol>
+                </td>
+              </tr>
+            </table><br>
+			
+          <table border="0" cellspacing="0" cellpadding="0"
+            class="SideBarTable" summary="SummaryTBD">
+              <tr>
+                <td><p><strong>To reinstall Flight Simulator</strong></p>
+
+                  <ol>
+                    <li>Insert <strong>Flight Simulator Disc 1</strong>
+                    into your DVD drive.</li>
+
+                    <li>If Setup does not start automatically, click
+                    <strong>Start</strong>, and then click <strong>Run</strong>.</li>
+
+                    <li>In the <strong>Open</strong> box, type
+					 <strong><em>drive</em>:\autorun</strong> (where 
+					 <strong><em>drive</em></strong> is your DVD drive).</li>
+                  </ol>
+                </td>
+              </tr>
+            </table><a name="GatheringInformationDirectX"></a><br>
+
+            <p class="SubHead">Gathering Information in DirectX</p>
+
+            <p>If you need to contact Microsoft for additional
+            assistance, you can collect valuable information about
+            your system before making that contact. Your support
+            professional can use this information while assisting
+            you with your issue.</p>
+
+            <table border="0" cellspacing="0" cellpadding="0"
+            class="SideBarTable" summary="SummaryTBD">
+              <tr>
+                <td>
+                  <p><strong>To gather DirectX information</strong></p>
+
+                  <ol>
+                    <li>Click <strong>Start</strong>, and then click
+                    <strong>Run</strong>.</li>
+
+                    <li>Type <strong>dxdiag</strong> in the <strong>Open</strong> box, and
+                    then click <strong>OK</strong>.</li>
+
+                    <li>Note the version on the <strong>DirectX 
+					Version</strong> line.</li>
+
+                    <li>Check the <strong>Notes</strong> on each tab, and 
+					write down everything in the Notes section,
+                    except for &quot;No problems found.&quot; Make sure to 
+					take note of any uncertified drivers.</li>
+
+                    <li>Run these recommended diagnostic tests by 
+					following the on-screen instructions:
+
+                      <ul>
+                        <li>On the <strong>Display</strong> tab, click the
+                        <strong>Test DirectDraw</strong> button to test
+                        DirectDraw functionality.</li>
+
+                        <li>On the <strong>Display</strong> tab, click the
+                        <strong>Test Direct3D</strong> button to test
+                        Direct3D functionality</li>
+
+                        <li>On the <strong>Sound</strong> tab, click the
+                        <strong>Test DirectSound</strong> button to test
+                        DirectSound functionality.</li>
+
+                        <li>On the <strong>Music</strong> tab, click the
+                        <strong>Test DirectMusic</strong> button to test
+                        DirectMusic functionality.</li>
+                      </ul>
+                    </li>
+                  </ol>
+                </td>
+              </tr>
+            </table>
+
+            <p>If the problem is not resolved, contact Microsoft
+            Product Support Services. For more information, see
+            <strong>Online Resources</strong> below.</p><a name=
+            "OnlineResources"></a>
+
+            <p class="SubHead">Online Resources</p>
+
+            <p>To easily diagnose and answer technical questions
+            yourself, visit
+            <strong>support.microsoft.com/support/games</strong>.</p>
+
+            <p>You can also submit your support questions via the
+            Internet. For more details, visit
+            <strong>support.microsoft.com/support/webresponse.asp</strong>.</p>
+
+            <table border="0" cellspacing="0" cellpadding="0"
+            class="note" summary="SummaryTBD">
+              <tr>
+                <td>
+                  <p><strong>Note:</strong> If your Microsoft product was
+                  preinstalled or distributed with your personal
+                  computer or provided by an Internet service
+                  provider (ISP), the computer manufacturer or ISP
+                  is responsible for providing your product
+                  support. Please contact the source from which you
+                  obtained your Microsoft product for support
+                  information.</p>
+                </td>
+              </tr>
+            </table>
+
+            <p>When you contact Microsoft for support, use the
+            following guidelines to make your support experience as
+            quick and as pleasant as possible. You should be at
+            your computer and have the appropriate product
+            documentation at hand. Please be prepared to provide
+            the following information:</p>
+
+            <ul>
+              <li>The version of Flight Simulator you use.</li>
+
+              <li>The type of hardware you use.</li>
+
+              <li>The operating system you use.</li>
+
+              <li>The exact wording of any messages that appeared
+              on your screen.</li>
+
+              <li>A description of what happened and what you were
+              doing when the problem occurred.</li>
+
+              <li>A description of how you tried to solve the
+              problem.</li>
+            </ul>
+          </div>
+
+          <div class="TopLink">
+            <a href="#top" class="TopLink">- top -</a>
+          </div>
+        </td>
+      </tr>
+    </table>
+  
+</body>
+</html>
